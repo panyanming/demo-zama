@@ -1,0 +1,43 @@
+{
+  "name": "fhevm-voting-dapp",
+  "version": "1.0.0",
+  "description": "A privacy-preserving voting DApp using FHEVM",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:zama": "hardhat run scripts/deploy.js --network zama",
+    "node": "hardhat node",
+    "frontend": "cd frontend && npm start",
+    "build": "hardhat compile && cd frontend && npm run build",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --ext .js,.ts --fix"
+  },
+  "keywords": [
+    "fhevm",
+    "privacy",
+    "voting",
+    "blockchain",
+    "dapp",
+    "homomorphic-encryption"
+  ],
+  "author": "FHEVM Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@types/node": "^20.0.0",
+    "eslint": "^8.0.0",
+    "hardhat": "^2.19.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "fhevm": "^0.3.0",
+    "fhevm-contracts": "^0.3.0",
+    "dotenv": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
